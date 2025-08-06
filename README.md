@@ -20,15 +20,19 @@ Link to paper: 	https://www.liebertpub.com/doi/10.1089/ast.2022.0010
 
 	Contains the spectra with and without phosphine (labeled 'noPH3') for the warm Jupiter modeled in the publication (Figure 5).  Units: Wavelength (microns) vs  Flux (W/m2/m) at the top of the atmosphere. Source: Yamila Miguel
 
+	> **Note:** The Jupyter notebook  [conversion.ipynb](conversion.ipynb) allows you to scale and convert to LIFEsim-friendly units to reproduce the Figure in the paper. 
+	
+
   
 
 - `SuperEarths/` 
 
-	Contains the spectra with (labeled 'with_PH3') and without phosphine (labeled 'wo_PH3') for the Super Earths modeled in the publication. Both the H2-rich case (labeled 'H2', corresponding to Figure 3) and CO2-rich case (labeled 'CO2', corresponding to Figure 4). Units: Wavenumber vs Contrast. See Figures 6/7 from Sousa-Silva et al. 2019.
+	Contains the spectra with (labeled 'with_PH3') and without phosphine (labeled 'wo_PH3') for the Super Earths modeled in the publication. Both the H2-rich case (labeled 'H2', corresponding to Figure 3) and CO2-rich case (labeled 'CO2', corresponding to Figure 4). Units: Wavenumber (cm^-1) vs Contrast. See Figures 6/7 from Sousa-Silva et al. 2019.
   
+	> **Note:** You will need to multiply the contrast by a stellar flux to get the planet flux. 
 
 - `Venuslike/` 
 
-	Contains the spectra with (labeled 'ph3') and without phosphine (labeled 'no_ph3') for the warm Jupiter modeled in the publication (Figure 2).  Units: Wavelength (microns, 1st column) vs  contrast (4th column, must be multiplied by stellar flux, also in the file as the 2nd column)
+	Contains the spectra with (labeled 'ph3') and without phosphine (labeled 'no_ph3') for the warm Jupiter modeled in the publication (Figure 2).  Units: Wavelength (microns, 1st column) vs  contrast.
 
-  
+	> **Note:** You will need to multiply the contrast by a stellar flux to get the planet flux. 
